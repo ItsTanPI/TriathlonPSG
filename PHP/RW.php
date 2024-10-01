@@ -5,8 +5,7 @@ fwrite($FH, $JSON);
 fclose($FH);
 
 $FH = fopen("../Saves/SaveData.json", 'r');
-$OP = fread($FH);
-
+$OP = fread($FH, filesize("..//Saves//SaveData.json"));
 $jsonResponse = json_encode($OP);
 
 echo $jsonResponse;

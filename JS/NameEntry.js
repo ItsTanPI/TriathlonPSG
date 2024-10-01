@@ -36,7 +36,8 @@ $(document).ready(async function()
         var Name = $("#NameEntry").val();
         console.log(Name);
         Save.Name = Name
-        var write = await ajax(Save);
-        console.log(write);
+        Save = await ajax(Save);
+        console.log(Save);
+
     })
 });
