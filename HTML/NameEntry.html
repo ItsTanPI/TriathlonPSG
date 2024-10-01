@@ -3,28 +3,42 @@
     <title>Story Game</title>
     <link rel=" shortcut icon" type="x-icon" href="logo.png">
     <style>
-       
+        body
+       {
+        background-image: linear-gradient(to right, rgb(180, 232, 248) , rgb(229, 188, 245));
+       }
        #ii{
         position:absolute;
         top: 67%;
         left: 37.5%;
         z-index: 3;
+        
        }
        #ww{
         position:absolute;
         top: 13%;
         left: 36%;
        } 
+       #EnterName{
+        position:absolute;
+        top: 77%;
+        left: 47.5%;
+        z-index: 3;
+        height: 3%;
+        width: 5%;
+       }
     </style>
 </head>
-<script src = "../LIB/jquery.js"></script>
-<script src = "../JS/NameEntry.js"></script>
-
-<div>
-    <h2 id="ii">Enter Your Name : <input id = NameEntry></input></h2>
-    <input type="button" id="EnterName">
-    <img src="care.jpg" height="50%" width="25%" id="ww">
-</div>
+<body>
+  
+    <script src = "../LIB/jquery.js"></script>
+    <div>
+        <h2 id="ii">Enter Your Name : <input id = NameEntry></input></h2>
+        <input type="button" id="EnterName" value="NEXT" >
+        <img src="care.jpg" height="50%" width="25%" id="ww">
+    </div>
+    
+</body>
 
 
 </html>
